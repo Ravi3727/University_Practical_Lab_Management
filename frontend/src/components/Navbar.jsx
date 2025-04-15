@@ -38,8 +38,8 @@ export function Navbar() {
               <div class="flex-shrink-0">
                 ${
                   isStudent
-                    ? `<span class="mr-4">Welcome! ${user.student.name}</span>`
-                    : `<span class="mr-4">Welcome! ${user.teacher.name}</span>`
+                    ? `<span class="mr-4">Welcome! ${user.student?.name}</span>`
+                    : `<span class="mr-4">Welcome! ${user.teacher?.name}</span>`
                 }
               
                 <button id="logout-btn" class="rounded-xl btn btn-secondary">Logout</button>
